@@ -16,10 +16,6 @@ body{
     background-blend-mode: color-burn;
 }
 
-#container{
-
-}
-
 h1{
     width: min-content;
     margin: 0 auto 20px;
