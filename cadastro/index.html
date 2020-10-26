@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <title>SignUp!</title>
+</head>
+<body>
+
+    <div class="swaip">
+        <div class="back-ball">
+            <div class="ball"></div>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Cadastro</h1>
+        <form>
+            <div class="back-input back-input-nome">
+                <input id="nome" type="text" />
+                <label for="nome" class="placeholder" id="phnome">Nome:</label>
+            </div>
+            <div class="back-input back-input-sobrenome">
+                <input id="sobrenome" type="text" class="sobrenome"/>
+                <label for="sobrenome" class="placeholder" id="phsobrenome">Sobrenome:</label>
+            </div>
+
+            <div class="back-input back-input-email">
+                <input id="mail" type="email" autocomplete="username"/>
+                <label for="mail" class="placeholder" id="phemail">E-mail:</label>
+            </div>
+            <div class="back-input back-input-senha">
+                <input id="pass" type="password" autocomplete="current-password"/>
+                <label for="pass" class="placeholder" id="phsenha1">Senha:</label>
+            </div>
+            <div class="back-input back-input-senha">
+                <input id="pass2" type="password" class="pass2" autocomplete="current-password"/>
+                <label for="pass2" class="placeholder" id="phsenha2">Repetir Senha:</label>
+            </div>
+            <span class="fas fa-eye"></span>
+            <input class="cadastrar" type="submit" value="Cadastrar-se"/>
+        </form>
+        <p class="naoTemConta">Já tem uma conta? <a class="linkCadastro" href="../login/index.html">Faça Login !</a></p>
+    </div>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

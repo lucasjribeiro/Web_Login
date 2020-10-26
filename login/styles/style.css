@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    background-image: url("https://image.freepik.com/vetores-gratis/abstrato-branco-em-estilo-de-papel-3d_23-2148396396.jpg");
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+
+#container{
+
+}
+
+h1{
+    width: min-content;
+    margin: 0 auto 20px;
+    font-size: 40px;
+}
+
+form{
+    position: relative;
+}
+
+div .back-input{
+    background-color: white;
+    position: relative;
+    margin: 15px 0;
+    height: 60px;
+    width: 450px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    display: block;
+    padding: 0 25px;
+    height: 60px;
+    width: 450px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid grey;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+}
+
+input:not([type="submit"]):focus + .placeholder{
+    transform: translate(-6px, -20px) scale(.8);
+    color: deepskyblue;
+}
+
+input:not([type="submit"]):focus{
+    border-color: deepskyblue;
+}
+
+input[type="submit"]{
+    position: static;
+    font-size: 25px;
+    background: deepskyblue;
+    margin: 15px 0;
+    transition: all ease-in-out 0.2s;
+}
+
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+
+.placeholder{
+    position: absolute;
+    left: 26px;
+    font-size: 20px;
+    color: darkslategray;
+    z-index: 1;
+    transition: all ease-out .2s;
+}
+
+.fas{
+    position: absolute;
+    right: 25px;
+    color: #a0a0a0;
+    font-size: 20px;
+    visibility: hidden;
+    transition: all ease-in-out .2s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.naoTemConta{
+    width:max-content;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.linkCadastro{
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.2s;
+}
+
+.linkCadastro:hover{
+    border-bottom-color: blue;
+    color: blue;
+}
+
+
+
+
+/* Toggle Background between white and dark mode */
+.swaip{
+    width: 56px;
+    height: 30px;
+    background-color: #a0a0a0;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.back-ball{
+    width: 50px;
+    height: 20px;
+    background-color: #cfcfcf;
+    border-radius: 20px;
+    transition: all ease-in-out .2s;
+}
+
+.ball{
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: beige;
+    position: absolute;
+    top: 3px;
+    transition: all ease-in-out .2s;
+}
+
+
+
+/* Add after class by javascript */
+.addball{
+    transform: translateX(26px);
+    background-color: blue;
+}
+.addback-ball{
+    background-color: #67d9ff;
+}
+.addbody{
+    background: #111111;
+    background-image: url("https://image.freepik.com/vetores-gratis/abstrato-branco-em-estilo-de-papel-3d_23-2148396396.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.addh1p{
+    color: white;
+}
+div .addback-input{
+    background-color: #444;
+}
+div .addplaceholder,
+.addinputcolor{
+    color: #eee;
+}

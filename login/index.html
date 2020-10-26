@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="swaip">
+        <div class="back-ball">
+            <div class="ball"></div>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Login</h1>
+        <form>
+            <div class="back-input">
+                <input id="mail" type="email" autocomplete="username"/>
+                <label for="mail" class="placeholder" id="ph1">E-mail:</label>
+            </div>
+            <div class="back-input">
+                <input id="pass" type="password" autocomplete="current-password"/>
+                <label for="pass" class="placeholder" id="ph2">Senha:</label>
+                <span class="fas fa-eye"></span>
+            </div>
+            <input class="entrar" type="submit" value="Entrar"/>
+        </form>
+        <p class="naoTemConta">Ainda não tem uma conta? <a class="linkCadastro" href="../cadastro/index.html">Cadastre-se</a>.</p>
+    </div>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
